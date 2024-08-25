@@ -1,3 +1,6 @@
+<h1 align="center"><em> # Reto Alura: Encriptador de Texto </em></h1>
+ ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+
 Este proyecto es un encriptador de texto diseñado para ofrecer una interfaz web intuitiva que 
 permite a los usuarios cifrar y descifrar mensajes de manera sencilla. La aplicación presenta un 
 diseño responsivo que se adapta a diferentes tamaños de pantalla, desde computadoras de escritorio 

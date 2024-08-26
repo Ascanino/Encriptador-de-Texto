@@ -50,6 +50,10 @@ footer {
     margin-top: 54%;
 }
 
+.enlaces {
+    text-decoration: none;
+}
+
 .entrada-texto {
     display: flex;
     margin-top: 80px;

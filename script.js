@@ -5,8 +5,18 @@ const parrafo = document.getElementById("parrafo");
 const muneco = document.getElementById("muneco");
 const btnCopiar = document.querySelector(".btn-copiar");
 
-
 textArea.addEventListener('input', () => {
+    const regex = /[^a-z\s]/g;
+
+    if (regex.test(textArea.value)) {
+        swal({
+            title: "Caracter no permitido",
+            text: "Solo se permiten letras minúsculas y sin acentos.",
+            icon: "warning",
+        });
+        textArea.value = textArea.value.replace(regex, '');
+    }
+
     textArea.style.height = "48px"; 
     textArea.style.height = textArea.scrollHeight + "px"; 
 });
@@ -29,7 +39,6 @@ function manejarTexto(funcion, mensajeTitulo, imagenMuneco) {
         textArea.value = "";
         mensaje.style.backgroundImage = "none";
 
-        
         mensaje.style.display = "flex";
         btnCopiar.style.display = "flex";
 
@@ -40,8 +49,7 @@ function manejarTexto(funcion, mensajeTitulo, imagenMuneco) {
             tituloMensaje.style.display = "flex";
             muneco.src = imagenMuneco;
             muneco.style.display = "flex";
-            
-            
+
             if (document.contains(parrafo)) {
                 parrafo.remove();
             }

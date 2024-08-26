@@ -355,9 +355,6 @@ footer {
         width: auto;
         gap: 64px;
     }
-    header {
-        width: 100%;
-    }
 
     header img {
         width: 31.09px; 
@@ -423,12 +420,9 @@ footer {
     }
 
     .mensaje {
-        justify-content: center;
-        align-items: center;
         width: 90.7%; 
         min-height: 32px;
         max-height: 180px;
-        height: auto; 
         margin: 0; 
         font-size: 1.5rem; 
     }
@@ -443,20 +437,11 @@ footer {
         gap: 16px;
     }
 
-    .titulo-mensaje,
-    .parrafo {
-        align-items: center;
-        justify-content: center;
-        top: auto;
-        left: auto;
-    }
-
     .muneco {
         display: none; 
     }
 
     .btn-copiar {
-        justify-content: center;
         width: 100%; 
         margin-top: -32px;
         margin-bottom: 0px;
@@ -561,15 +546,6 @@ footer {
         box-shadow: none; 
         background-color: #FFFFFF;
     }
-
-    .mensaje {
-        font-size: 1.5rem; 
-    }
-
-    .btn-copiar {
-        justify-content: center;
-    }
-
 }
    
 

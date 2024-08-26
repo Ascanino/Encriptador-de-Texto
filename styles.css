@@ -258,6 +258,7 @@ footer {
 
 .btn-copiar {
     position: absolute;
+    justify-content: center;
     top: 89%;
     left: 8%;
     padding: 24px;
